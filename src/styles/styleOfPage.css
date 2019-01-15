@@ -1,0 +1,192 @@
+@font-face {
+    font-family: Font; /* Имя шрифта */
+    src: url(../Font.otf); /* Путь к файлу со шрифтом */
+}
+
+html {
+    height: 100%;
+}
+.page {
+    font-family: Font, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: url("../background.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(89, 44, 0);
+}
+
+.content {
+    width: 454px;
+    height: 260px;
+    background: url("../components/login/login-img/window.png");
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start-game, .input-name-field, .spell, #input-answer, .records-game, .button-back, .button-exit {
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Font, sans-serif;
+    color: rgb(89, 44, 0);
+    background-color: rgba(255, 165, 0, 0.69);
+    border-color: rgb(89, 44, 0);
+    outline:none;
+    text-align: center;
+}
+
+.start-game:hover {
+    color: rgb(174, 68, 0);
+    border-color: rgb(174, 68, 0);
+}
+
+.records-game:hover {
+    color: rgb(174, 68, 0);
+    border-color: rgb(174, 68, 0);
+}
+
+.input-name-field:hover {
+    color: rgb(174, 68, 0);
+    border-color: rgb(174, 68, 0);
+}
+
+.spell:hover {
+    color: rgb(174, 68, 0);
+    border-color: rgb(174, 68, 0);
+}
+
+.input-name-field {
+    width: 80%;
+}
+
+.container {
+    margin-bottom: 5%;
+}
+.panel {
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../components/login/login-img/panel.png");
+    background-size: cover;
+    border: 2px solid rgb(89, 44, 0);
+}
+
+.player-panel, .monster-panel {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#input-text:invalid + #btn {
+    pointer-events: none;
+}
+
+#player-lifes, #monster-lifes {
+    border: 2px solid rgb(89, 44, 0);
+}
+
+.modal {
+    position: fixed;
+    background: url("../components/login/login-img/window.png");
+    background-size: cover;
+    top: 20%;
+    width: 454px;
+    height: 260px;
+    outline:none;
+}
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.modal-content {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-body {
+    display: flex;
+    height: 65%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cast {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#task {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+#question {
+    text-align: center;
+}
+
+.record-window {
+    width: 600px;
+    height: 340px;
+    position: fixed;
+    top: 70px;
+    left: 400px;
+    background-image: url("../components/login/login-img/window.png");
+    background-size: cover;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list-record {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+}
+
+.link{
+    position: fixed;
+    top: 550px;
+    left: 5px;
+}
